@@ -4,11 +4,11 @@
 
 The tool only accepts E164 and International formats as input.
 
-- E164: +3396360XXXX
-- International: +33 9 63 60 XX XX
-- National: 09 63 60 XX XX
-- RFC3966: tel:+33-9-63-60-XX-XX
-- Out-of-country format from US: 011 33 9 63 60 XX XX
+- E164: +9891960XXXX
+- International: +98 9 19 63 XX XX
+- National: 98 919 63 XX XX
+- RFC3966: tel:+98-9-19-63-XX-XX
+- Out-of-country format from US: 0098 919 63 60 XX XX
 
 E.164 formatting for phone numbers entails the following:
 
@@ -29,14 +29,14 @@ In the UK, and many other countries internationally, local dialing may require t
 
 For example, here’s a UK-based number in standard local formatting: 020 7183 8750
 
-Here’s the same phone number in E.164 formatting: +442071838750
+Here’s the same phone number in E.164 formatting: +989124562516
 
 
 ## Custom formatting
 
 Sometimes the phone number has footprints but is used with a different formatting. This is a problem because for example if we search for "+15417543010", we'll not find web pages that write it that way : "(541) 754–3010". So the tool use a (optional) custom formatting given by the user to find further and more accurate results. To use this feature properly and make the results more valuable, try to use a format that someone of the number' country would usually use to share the phone number online.
 
-For example, French people usually write numbers that way online : `06.20.30.40.50` or `06 20 30 40 50`.
+For example, Iran people usually write numbers that way online : `06.20.30.40.50` or `06 20 30 40 50`.
 
 For US-based numbers, the most common format is : `543-456-1234`.
 
@@ -44,21 +44,21 @@ For US-based numbers, the most common format is : `543-456-1234`.
 
 Here are some examples of custom formatting for US-based phone numbers : 
 
-- `+1 618-555-xxxx`
-- `(+1)618-555-xxxx`
-- `+1/618-555-xxxx`
-- `(618) 555xxxx`
-- `(618) 555-xxxx`
-- `(618) 555.xxxx`
-- `(618)555xxxx`
-- `(618)555-xxxx`
-- `(618)555.xxxx`
+- `+98 912-555-xxxx`
+- `(+98) 912-555-xxxx`
+- `+98/912-555-xxxx`
+- `(912) 555xxxx`
+- `(912) 555-xxxx`
+- `(935) 555.xxxx`
+- `(935)555xxxx`
+- `(935)555-xxxx`
+- `(919)555.xxxx`
 
-For European countries (France as example) : 
+For European countries (Iran as example) : 
 
-- `+3301 86 48 xx xx`
-- `+33018648xxxx`
-- `+33018 648 xxx x`
+- `+98912 848 xx xx`
+- `+98912484xxxx`
+- `+98 912 484 xxx x`
 - `(0033)018648xxxx`
 - `(+33)018 648 xxx x`
 - `+33/018648xxxx`
@@ -99,8 +99,8 @@ Examples :
 
 ```
 {
-    'input': '+33 066651xxxx',
-    'default': '3366651xxxx',
+    'input': '+98 912651xxxx',
+    'default': '98 912651xxxx',
     'local': '66651xxxx',
     'international': '+33 66651xxxx',
     'country': 'France',
